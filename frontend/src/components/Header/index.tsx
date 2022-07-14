@@ -8,10 +8,12 @@ function Header(){
                 <img src={icon} alt="DsMeta"/>
                 <h1>DsMeta</h1>
                 <p>
-                    Desenvolvido por IGL
-                </p>
+                    Desenvolvido por Janders Melhor IGL do BR
+                </p>    
             </div>
         </header>
+
+        
     )
 }
 
