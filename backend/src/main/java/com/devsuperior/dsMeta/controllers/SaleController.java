@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.devsuperior.dsMeta.entities.Sale;
-import com.devsuperior.dsMeta.repositories.SaleRepository;
+import com.devsuperior.dsMeta.service.SaleService;
 
 
 
@@ -17,15 +17,12 @@ import com.devsuperior.dsMeta.repositories.SaleRepository;
 public class SaleController {
 	
 	@Autowired
-	private SaleRepository repository;
-	
+	private SaleService service;
 	
 	@GetMapping
-	public List<Sale> findAll(){
-		List<Sale> into = repository.findAll();
-		return into;
+	public List<Sale> findSales(){
+		return service.findSales();
+		 
 	}
-
-	
 
 }
