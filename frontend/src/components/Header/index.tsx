@@ -1,6 +1,8 @@
 import icon from '../../assets/img/cabecalho.svg'
 import './styles.css'
 
+const name = "Caio Eduardo"
+
 function Header(){
     return (
         <header>
@@ -8,7 +10,7 @@ function Header(){
                 <img src={icon} alt="DsMeta"/>
                 <h1>DsMeta</h1>
                 <p>
-                    Desenvolvido por Janders Melhor IGL do BR
+                    Desenvolvido por {name}
                 </p>    
             </div>
         </header>
